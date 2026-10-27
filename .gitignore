@@ -1,0 +1,14 @@
+node_modules
+dist
+test-results
+playwright-report
+*.log
+# Apple fonts and device artwork: licensed for local mockups, never committed
+public/apple
+# Telegram's background pattern (GPL-3.0): fetched with `npm run fetch-pattern`
+public/telegram
+# Render by-products and earlier cuts
+video/render-source/stills
+video/render-source/soundtrack.wav
+video/archive
+video/*-silent.mp4

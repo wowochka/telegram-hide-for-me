@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+body {
+  background: #000;
+  color: #fff;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 24px 16px;
+  background:
+    radial-gradient(60% 50% at 0% 50%, rgba(31, 168, 140, 0.35), transparent 70%),
+    radial-gradient(60% 50% at 100% 50%, rgba(38, 112, 230, 0.35), transparent 70%),
+    #000;
+}
+.page-phone {
+  position: relative;
+}
+.page-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 460px;
+  text-align: center;
+}
+.page-hint {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.82);
+}
+.page-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.page-buttons button {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+.page-buttons button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.page-buttons button:focus-visible {
+  outline: 2px solid #3e94ff;
+  outline-offset: 2px;
+}
+.page-foot {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
